@@ -23,8 +23,10 @@ public class Main {
 //        greatedCommonDivisorStringImpl();
 //        keyBoardRowImpl();
 //        validParenthesisImpl();
-        wVABTPImpl();
+//        wVABTPImpl();
+        cpfImpl();
     }
+
 
 
     private static void twoSumsImpl() {
@@ -96,7 +98,7 @@ public class Main {
 
     private static void cpfImpl() {
         System.out.println(
-                CanPlaceFlowers.solution(new int[]{1, 0, 0, 0, 1}, 2)
+                CanPlaceFlowers.solution2(new int[]{1, 0, 0, 0, 1}, 2)
         );
     }
 }
