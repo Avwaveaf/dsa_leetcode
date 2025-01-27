@@ -7,6 +7,7 @@ import com.avwaveaf.solutions.arrays.WidestVertAreaBtweenTwoPoints;
 import com.avwaveaf.solutions.math.NumberOfSteps;
 import com.avwaveaf.solutions.search.binary_search.BinarySearch;
 import com.avwaveaf.solutions.strings.*;
+import com.avwaveaf.solutions.two_pointers.MoveZeroes;
 
 import java.util.Arrays;
 
@@ -25,7 +26,8 @@ public class Main {
 //        cpfImpl();
 //        reverseVowelsImpl();
 //        reverseStringImpl();
-        poaesImpl();
+//        poaesImpl();
+        moveZeroes();
     }
 
 
@@ -120,7 +122,14 @@ public class Main {
         System.out.println(
                 Arrays.toString(ProductOfArrayExceptSelf.solution(new int[]{1,2,3,4,5}))
         );
+    }
 
+    private static void moveZeroes(){
+        int[] nums = new int[]{0, 1, 0, 3, 12};
+        MoveZeroes.solution(nums);
+        System.out.println(
+                Arrays.toString(nums)
+        );
     }
 
 }
