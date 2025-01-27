@@ -5,10 +5,7 @@ import com.avwaveaf.solutions.arrays.TwoSums;
 import com.avwaveaf.solutions.arrays.WidestVertAreaBtweenTwoPoints;
 import com.avwaveaf.solutions.math.NumberOfSteps;
 import com.avwaveaf.solutions.search.binary_search.BinarySearch;
-import com.avwaveaf.solutions.strings.GCDString;
-import com.avwaveaf.solutions.strings.KeyboardRow;
-import com.avwaveaf.solutions.strings.MergeStringAlternately;
-import com.avwaveaf.solutions.strings.ValidParenthesis;
+import com.avwaveaf.solutions.strings.*;
 
 import java.util.Arrays;
 
@@ -24,7 +21,9 @@ public class Main {
 //        keyBoardRowImpl();
 //        validParenthesisImpl();
 //        wVABTPImpl();
-        cpfImpl();
+//        cpfImpl();
+//        reverseVowelsImpl();
+        reverseStringImpl();
     }
 
 
@@ -101,4 +100,18 @@ public class Main {
                 CanPlaceFlowers.solution2(new int[]{1, 0, 0, 0, 1}, 2)
         );
     }
+
+    private static void reverseVowelsImpl() {
+        System.out.println(
+                ReverseVowels.solution("leetcode")
+        );
+    }
+
+    private static void reverseStringImpl() {
+        System.out.println(
+                ReverseString.solution2("a good   example")
+        );
+
+    }
+
 }
