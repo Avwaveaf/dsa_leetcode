@@ -20,9 +20,7 @@ public class IsSubsequence {
         for (char tChar : tChars) {
             if (p1 < sChars.length) {
                 if (tChar == sChars[p1]) {
-
                     p1 += 1;
-
                 }
             }
         }
