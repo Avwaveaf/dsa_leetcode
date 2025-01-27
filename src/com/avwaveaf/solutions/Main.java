@@ -27,7 +27,8 @@ public class Main {
 //        reverseVowelsImpl();
 //        reverseStringImpl();
 //        poaesImpl();
-        moveZeroes();
+//        moveZeroes();
+        isSubsequenceImpl();
     }
 
 
@@ -129,6 +130,12 @@ public class Main {
         MoveZeroes.solution(nums);
         System.out.println(
                 Arrays.toString(nums)
+        );
+    }
+
+    private static void isSubsequenceImpl(){
+        System.out.println(
+                IsSubsequence.solution("abc", "ahbgdc")
         );
     }
 
