@@ -1,6 +1,7 @@
 package com.avwaveaf.solutions;
 
 import com.avwaveaf.solutions.arrays.CanPlaceFlowers;
+import com.avwaveaf.solutions.arrays.ProductOfArrayExceptSelf;
 import com.avwaveaf.solutions.arrays.TwoSums;
 import com.avwaveaf.solutions.arrays.WidestVertAreaBtweenTwoPoints;
 import com.avwaveaf.solutions.math.NumberOfSteps;
@@ -23,7 +24,8 @@ public class Main {
 //        wVABTPImpl();
 //        cpfImpl();
 //        reverseVowelsImpl();
-        reverseStringImpl();
+//        reverseStringImpl();
+        poaesImpl();
     }
 
 
@@ -110,6 +112,13 @@ public class Main {
     private static void reverseStringImpl() {
         System.out.println(
                 ReverseString.solution2("a good   example")
+        );
+
+    }
+
+    private static void poaesImpl() {
+        System.out.println(
+                Arrays.toString(ProductOfArrayExceptSelf.solution(new int[]{1,2,3,4,5}))
         );
 
     }
