@@ -6,6 +6,7 @@ import com.avwaveaf.solutions.arrays.TwoSums;
 import com.avwaveaf.solutions.arrays.WidestVertAreaBtweenTwoPoints;
 import com.avwaveaf.solutions.math.NumberOfSteps;
 import com.avwaveaf.solutions.search.binary_search.BinarySearch;
+import com.avwaveaf.solutions.sliding_windows.MaxNumVowels;
 import com.avwaveaf.solutions.strings.*;
 import com.avwaveaf.solutions.two_pointers.MoveZeroes;
 
@@ -28,7 +29,8 @@ public class Main {
 //        reverseStringImpl();
 //        poaesImpl();
 //        moveZeroes();
-        isSubsequenceImpl();
+//        isSubsequenceImpl();
+        maxNumVowelsImpl();
     }
 
 
@@ -136,6 +138,12 @@ public class Main {
     private static void isSubsequenceImpl(){
         System.out.println(
                 IsSubsequence.solution("abc", "ahbgdc")
+        );
+    }
+
+    private static void maxNumVowelsImpl(){
+        System.out.println(
+                MaxNumVowels.solution("abciiidef", 3)
         );
     }
 
