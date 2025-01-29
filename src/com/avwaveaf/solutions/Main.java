@@ -4,6 +4,7 @@ import com.avwaveaf.solutions.arrays.CanPlaceFlowers;
 import com.avwaveaf.solutions.arrays.ProductOfArrayExceptSelf;
 import com.avwaveaf.solutions.arrays.TwoSums;
 import com.avwaveaf.solutions.arrays.WidestVertAreaBtweenTwoPoints;
+import com.avwaveaf.solutions.greedy.IncreasingTripletSubsequence;
 import com.avwaveaf.solutions.math.NumberOfSteps;
 import com.avwaveaf.solutions.search.binary_search.BinarySearch;
 import com.avwaveaf.solutions.sliding_windows.MaxNumVowels;
@@ -30,7 +31,8 @@ public class Main {
 //        poaesImpl();
 //        moveZeroes();
 //        isSubsequenceImpl();
-        maxNumVowelsImpl();
+//        maxNumVowelsImpl();
+        increasingTripletImpl();
     }
 
 
@@ -143,7 +145,13 @@ public class Main {
 
     private static void maxNumVowelsImpl(){
         System.out.println(
-                MaxNumVowels.solution("abciiidef", 3)
+                MaxNumVowels.solution2("ibpbhixfiouhdljnjfflpapptrxgcomvnb", 33)
+        );
+    }
+
+    private static void increasingTripletImpl(){
+        System.out.println(
+                IncreasingTripletSubsequence.solution(new int[]{1,1,-2,6})
         );
     }
 

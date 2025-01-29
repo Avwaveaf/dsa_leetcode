@@ -53,7 +53,7 @@ public class MaxNumVowels {
         }
 
         return maxCount;
-        // rwarinf
+        // Fail case
     }
 
     private static boolean isVowels(char c){
@@ -61,4 +61,35 @@ public class MaxNumVowels {
         return newC == 'a' || newC == 'i' || newC == 'u' || newC=='e' || newC=='o';
     }
 
+
+    public static int solution2(String s, int k){
+        if(s.length() == 1){
+            return isVowels(s.charAt(0))? 1 : 0;
+        }
+        int totalVowInWf = 0;
+
+        // first compare within window
+        for(int i =0; i < k; i++){
+            if(isVowels(s.charAt(i))){
+                ++totalVowInWf;
+            }
+        }
+
+        int maxVow = totalVowInWf;
+
+        for(int i = k; i<s.length(); i++){
+            if(isVowels(s.charAt(i))){
+                ++totalVowInWf;
+            }
+            if(isVowels(s.charAt(i-k))){
+                --totalVowInWf;
+            }
+
+            if(totalVowInWf >= maxVow){
+                maxVow = totalVowInWf;
+            }
+        }
+
+        return maxVow;
+    }
 }
