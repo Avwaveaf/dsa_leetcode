@@ -1,9 +1,6 @@
 package com.avwaveaf.solutions;
 
-import com.avwaveaf.solutions.arrays.CanPlaceFlowers;
-import com.avwaveaf.solutions.arrays.ProductOfArrayExceptSelf;
-import com.avwaveaf.solutions.arrays.TwoSums;
-import com.avwaveaf.solutions.arrays.WidestVertAreaBtweenTwoPoints;
+import com.avwaveaf.solutions.arrays.*;
 import com.avwaveaf.solutions.greedy.IncreasingTripletSubsequence;
 import com.avwaveaf.solutions.math.NumberOfSteps;
 import com.avwaveaf.solutions.search.binary_search.BinarySearch;
@@ -32,7 +29,9 @@ public class Main {
 //        moveZeroes();
 //        isSubsequenceImpl();
 //        maxNumVowelsImpl();
-        increasingTripletImpl();
+//        increasingTripletImpl();
+//        stringCompressionImpl();
+        maxAreaImpl();
     }
 
 
@@ -152,6 +151,18 @@ public class Main {
     private static void increasingTripletImpl(){
         System.out.println(
                 IncreasingTripletSubsequence.solution(new int[]{1,1,-2,6})
+        );
+    }
+
+    private static void stringCompressionImpl(){
+        System.out.println(
+                StringCompression.solution(new char[]{'a', 'a', 'b', 'b', 'c', 'c'})
+        );
+    }
+
+    private static void maxAreaImpl(){
+        System.out.println(
+                MaxArea.solution(new int[]{10,9,8,7,6,5,4,3,2,1})
         );
     }
 
