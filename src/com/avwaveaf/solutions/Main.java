@@ -3,6 +3,7 @@ package com.avwaveaf.solutions;
 import com.avwaveaf.solutions.arrays.*;
 import com.avwaveaf.solutions.greedy.IncreasingTripletSubsequence;
 import com.avwaveaf.solutions.math.NumberOfSteps;
+import com.avwaveaf.solutions.prefix_sum.FindHighestAltitude;
 import com.avwaveaf.solutions.search.binary_search.BinarySearch;
 import com.avwaveaf.solutions.sliding_windows.MaxNumVowels;
 import com.avwaveaf.solutions.strings.*;
@@ -31,7 +32,8 @@ public class Main {
 //        maxNumVowelsImpl();
 //        increasingTripletImpl();
 //        stringCompressionImpl();
-        maxAreaImpl();
+//        maxAreaImpl();
+        fhaImpl();
     }
 
 
@@ -163,6 +165,12 @@ public class Main {
     private static void maxAreaImpl(){
         System.out.println(
                 MaxArea.solution(new int[]{10,9,8,7,6,5,4,3,2,1})
+        );
+    }
+
+    private static void fhaImpl(){
+        System.out.println(
+                FindHighestAltitude.solution(new int[]{-5,1,5,0,-7})
         );
     }
 
