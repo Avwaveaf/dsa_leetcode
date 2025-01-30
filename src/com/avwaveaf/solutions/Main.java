@@ -7,6 +7,7 @@ import com.avwaveaf.solutions.prefix_sum.FindHighestAltitude;
 import com.avwaveaf.solutions.search.binary_search.BinarySearch;
 import com.avwaveaf.solutions.sliding_windows.MaxNumVowels;
 import com.avwaveaf.solutions.strings.*;
+import com.avwaveaf.solutions.prefix_sum.FindPivotIndex;
 import com.avwaveaf.solutions.two_pointers.MoveZeroes;
 
 import java.util.Arrays;
@@ -33,7 +34,8 @@ public class Main {
 //        increasingTripletImpl();
 //        stringCompressionImpl();
 //        maxAreaImpl();
-        fhaImpl();
+//        fhaImpl();
+        fpiImpl();
     }
 
 
@@ -171,6 +173,12 @@ public class Main {
     private static void fhaImpl(){
         System.out.println(
                 FindHighestAltitude.solution(new int[]{-5,1,5,0,-7})
+        );
+    }
+
+    private static void fpiImpl(){
+        System.out.println(
+                FindPivotIndex.solution(new int[]{1,7,3,6,5,6})
         );
     }
 
