@@ -2,12 +2,15 @@ package com.avwaveaf.solutions;
 
 import com.avwaveaf.solutions.arrays.*;
 import com.avwaveaf.solutions.greedy.IncreasingTripletSubsequence;
+import com.avwaveaf.solutions.hash_table.FindDifferenceOfTwoArrays;
 import com.avwaveaf.solutions.math.NumberOfSteps;
 import com.avwaveaf.solutions.prefix_sum.FindHighestAltitude;
 import com.avwaveaf.solutions.search.binary_search.BinarySearch;
+import com.avwaveaf.solutions.sliding_windows.MaxConsecutiveOnesIII;
 import com.avwaveaf.solutions.sliding_windows.MaxNumVowels;
 import com.avwaveaf.solutions.strings.*;
 import com.avwaveaf.solutions.prefix_sum.FindPivotIndex;
+import com.avwaveaf.solutions.two_pointers.MaxNumberOfKSumPairs;
 import com.avwaveaf.solutions.two_pointers.MoveZeroes;
 
 import java.util.Arrays;
@@ -35,7 +38,10 @@ public class Main {
 //        stringCompressionImpl();
 //        maxAreaImpl();
 //        fhaImpl();
-        fpiImpl();
+//        fpiImpl();
+//        mnokspImpl();
+//        mcoIIIImpl();
+        fdotaImpl();
     }
 
 
@@ -181,5 +187,23 @@ public class Main {
                 FindPivotIndex.solution(new int[]{1,7,3,6,5,6})
         );
     }
+    private static void mnokspImpl(){
+        System.out.println(
+                MaxNumberOfKSumPairs.solution(new int[]{4,4,1,3,1,3,2,2,5,5,1,5,2,1,2,3,5,4}, 2)
+        );
+    }
+
+    private static void mcoIIIImpl(){
+        System.out.println(
+                MaxConsecutiveOnesIII.solution(new int[]{1,1,1,0,0,0,1,1,1,1,0}, 2)
+        );
+    }
+
+    private static void fdotaImpl(){
+        System.out.println(
+                FindDifferenceOfTwoArrays.solution2(new int[] {1,2,3,3}, new int[]{1,1,2,2})
+        );
+    }
+
 
 }
