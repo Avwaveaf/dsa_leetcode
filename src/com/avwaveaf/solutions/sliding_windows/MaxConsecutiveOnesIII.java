@@ -11,7 +11,24 @@ package com.avwaveaf.solutions.sliding_windows;
 * */
 
 public class MaxConsecutiveOnesIII {
-    public static int solution(int[]nums, int k ){
-        return -1;
+    public static int solution(int[] nums, int k) {
+            int left = 0, maxLength = 0, zeroCount = 0;
+
+            for (int i = 0; i < nums.length - 1; i++) {
+                if (nums[i] == 0) {
+                    zeroCount += 1;
+                }
+
+                while (zeroCount > k) {
+                    if (nums[left] == 0) {
+                        zeroCount -= 1;
+                        left += 1;
+                    }
+                }
+
+                maxLength = Math.max(maxLength, i - left + 1);
+            }
+
+            return maxLength;
     }
 }
